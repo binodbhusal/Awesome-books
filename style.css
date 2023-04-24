@@ -1,5 +1,7 @@
 body {
   background-color: lightblue;
+  text-decoration: none;
+  list-style: none;
 }
 
 form {
