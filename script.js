@@ -61,11 +61,10 @@ const emptyCell = () => {
   if (bookTitle.value.length === 0 || bookAuthor.value.length === 0) {
     error.innerText = 'The values you provided are empty';
   }
+  // return error.innerText;
 };
 
-addBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  emptyCell();
+const checkDoubles = () => {
   const checkBooks = bookList.find((book) => book.title === bookTitle.value);
   const checkAuthors = bookList.find(
     (book) => book.author === bookAuthor.value,
@@ -78,6 +77,12 @@ addBtn.addEventListener('click', (e) => {
     bookList = books.getBook();
     displayBooks();
   }
+};
+
+addBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  emptyCell();
+  checkDoubles();
   form.reset();
 });
 
