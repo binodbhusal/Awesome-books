@@ -12,7 +12,6 @@ class Book {
     this.bookList = JSON.parse(localStorage.getItem('storage-book')) || [];
   }
 
-  // add book
   addNewBook(author, title) {
     const updatedBook = [
       ...this.bookList,
@@ -22,29 +21,25 @@ class Book {
         title,
       },
     ];
-    // it needs to update the storage
+
     this.updateStorage(updatedBook);
   }
 
-  // remove book
   removeBook(id) {
     const updatedBook = this.bookList.filter((it) => it.id !== id);
     this.updateStorage(updatedBook);
   }
 
-  // get book from storage
   getBook() {
     return this.bookList;
   }
 
-  // update the storage
   updateStorage(data) {
     localStorage.setItem('storage-book', JSON.stringify(data));
     this.bookList = data;
   }
 }
 
-// instantiate book class
 const books = new Book();
 let bookList = books.getBook();
 
@@ -61,8 +56,6 @@ const displayBooks = () => {
     );
   });
 };
-
-// displayBooks();
 
 const emptyCell = () => {
   if (bookTitle.value.length === 0 || bookAuthor.value.length === 0) {
