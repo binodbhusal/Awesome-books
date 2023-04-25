@@ -10,17 +10,26 @@
   <body>
     <h1>Awesome Books</h1>
 
-    <div>
-      <ul>
-        <!-- fetched dynamically-->
-      </ul>
+    <div id="book-list">
+      <!-- fetched dynamically -->
     </div>
 
-    <form>
-      <input type="text" name="Book-title" placeholder="Book title..." />
-      <input type="text" name="Author-name" placeholder="Author's name..." />
-      <button type="button" id="add">Add this!</button>
+    <form id="form">
+      <p id="error"></p>
+      <input
+        id="title"
+        type="text"
+        name="Book-title"
+        placeholder="Book title..."
+      />
+      <input
+        id="author"
+        type="text"
+        name="Author-name"
+        placeholder="Author's name..."
+      />
+      <button type="button" id="addBtn">Add this!</button>
     </form>
+    <script src="app.js"></script>
   </body>
 </html>
-
