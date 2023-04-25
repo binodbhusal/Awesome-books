@@ -44,9 +44,9 @@ class Book {
   }
 }
 
-// instntiate book class
+// instantiate book class
 const books = new Book();
-const bookList = books.getBook();
+let bookList = books.getBook();
 
 const displayBooks = () => {
   bookItem.innerHTML = '';
@@ -62,29 +62,25 @@ const displayBooks = () => {
   });
 };
 
-displayBooks();
+// displayBooks();
+
 const emptyCell = () => {
   if (bookTitle.value.length === 0 || bookAuthor.value.length === 0) {
-    (error.innerText = 'The values you provided are empty');
+    error.innerText = 'The values you provided are empty';
   }
 };
 
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  //   console.log(bookTitle);
-  //   console.log(bookTitle.value);
-  //   console.log(bookTitle.value.length);
   emptyCell();
   const checkBooks = bookList.find((book) => book.title === bookTitle.value);
   const checkAuthors = bookList.find(
     (book) => book.author === bookAuthor.value,
   );
   if (checkBooks && checkAuthors) {
-    console.log('he!!!!!');
     error.innerText = 'There is already a duplicate here!!';
   } else {
-    console.log('added!!!');
-    // error.innerHTML = "";
+    error.innerHTML = '';
     books.addNewBook(bookAuthor.value, bookTitle.value);
     bookList = books.getBook();
     displayBooks();
@@ -100,3 +96,5 @@ document.addEventListener('click', (e) => {
     displayBooks();
   }
 });
+
+displayBooks();

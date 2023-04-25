@@ -19,19 +19,20 @@ table {
   border-collapse: collapse;
 }
 
+td {
+  width: 80%;
+}
+
 tr td {
   padding: 0.2rem;
   padding-block: 1%;
   font-size: 25px;
+
   /* width: 50%; */
 }
 
 tr:nth-child(even) {
   background-color: rgb(180, 176, 176);
-}
-
-td {
-  width: 80%;
 }
 
 td > .btnRemove {
