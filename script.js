@@ -1,4 +1,4 @@
-const bookItem = document.getElementById("book-list");
+const bookItem = document.getElementById("table");
 const addBtn = document.getElementById("addBtn");
 const bookTitle = document.getElementById("title");
 const bookAuthor = document.getElementById("author");
@@ -13,10 +13,14 @@ class Book {
   addNewBook(author, title) {
     const updatedBook = [
       ...this.bookList,
-      { id: `${Math.random()}${author.split(" ")[0]}`, author, title },
+      {
+        id: `${Math.trunc(Math.random() * 100000)}${author.split(" ")[0]}`,
+        author,
+        title,
+      },
     ];
     //it needs to update the storage
-    updateStorage(updatedBook);
+    this.updateStorage(updatedBook);
   }
   //remove book
   removeBook(id) {
@@ -36,4 +40,22 @@ class Book {
 
 //instntiate book class
 const books = new Book();
+let bookList = books.getBook();
+console.log(books);
+
+const displayBooks = () => {
+  bookItem.innerHTML = "";
+  bookList.forEach((book) => {
+    bookItem.insertAdjacentHTML(
+      "beforeend",
+      `
+        <tr>
+          <td>${book.title} by ${book.author}</td>
+          <td><button class="btnRemove" id=${book.id}>Remove</button></td>
+        </tr>`
+    );
+  });
+};
+
+displayBooks();
 
