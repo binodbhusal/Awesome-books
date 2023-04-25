@@ -104,6 +104,7 @@ npx eslint .
 - GitHub: [@githubhandle](https://github.com/binodbhusal)
 - Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
+
 **Author 2** **Vangelis Fotiadis**
 
 - GitHub: [@githubhandle](https://github.com/vangelif)
@@ -114,9 +115,7 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[New HTML file will be added]**
-- [ ] **[New CSS file will be added]**
-- [ ] **[Database will be connected]**
+**Build a complete website for user to add and remove desired Book**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
