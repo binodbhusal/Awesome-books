@@ -26,6 +26,10 @@ nav {
   font-size: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 .logo {
   font-weight: 700;
 }
