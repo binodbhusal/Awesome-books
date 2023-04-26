@@ -59,7 +59,7 @@ const displayBooks = () => {
         <tr>
           <td>${book.title} by ${book.author}</td>
           <td><button class="btnRemove" id=${book.id}>Remove</button></td>
-        </tr>`
+        </tr>`,
     );
   });
 };
@@ -88,7 +88,7 @@ const checkEmpty = () => {
 const checkDoubles = () => {
   const checkBooks = bookList.find((book) => book.title === bookTitle.value);
   const checkAuthors = bookList.find(
-    (book) => book.author === bookAuthor.value
+    (book) => book.author === bookAuthor.value,
   );
   if (checkBooks && checkAuthors) {
     error.innerText = 'There is already a duplicate here!!';
