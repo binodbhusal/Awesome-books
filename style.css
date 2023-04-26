@@ -7,6 +7,34 @@ h1 {
   text-align: center;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid lightslategray;
+  border-radius: 8px;
+  padding: 0.7rem 9rem;
+  margin: 0.2rem 3rem;
+  font-size: 30px;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 7rem;
+}
+
 #error {
   color: red;
   font-size: 25px;
