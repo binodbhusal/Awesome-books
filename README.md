@@ -1,6 +1,3 @@
-
-
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -22,27 +19,27 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
-
 # 📖 [Awesome Books] <a name="about-project"></a>
 
 **[Awesome Books]** Awesome Books is a website which allows a user to add and remove the collection of books from a BookList.
+
 ## 🛠 HTML and CSS <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-  Combination of HTML, CSS and JavaScript.
+Combination of HTML, CSS and JavaScript.
 
 ### Key Features <a name="key-features"></a>
-   - **No linter errors**
+
+- **No linter errors**
 - **Use of correct GitHub flow**
 - **Documented in a professional way**
 - **Follow best practices for HTML, CSS and Javascript**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# 🚀Live Demo <a name="live-demo"></a> 
-- [Link to Live Demo ](#)
+# 🚀Live Demo <a name="live-demo"></a>
 
+- [Link to Live Demo ](#)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -52,7 +49,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-1. Knowledge of HTML and CSS 
+1. Knowledge of HTML and CSS
 2. VSCode or other text editor installed. [Link to Download VSCode](https://code.visualstudio.com/download)
 3. Node package. [Link to Download Node](https://nodejs.org/en/download)
 
@@ -60,40 +57,44 @@ In order to run this project you need:
 
 - Clone this repository to your desired folder:
 
-    Git clone:( https://github.com/binodbhusal/Awesome-books)
+  Git clone:( https://github.com/binodbhusal/Awesome-books)
 
 - Navigate to the location of the folder in your machine:
 
-    you@your-Pc-name:~$ cd Hello-Microverse
+  you@your-Pc-name:~$ cd Hello-Microverse
 
 ### Install
 
 Install this project with:
+
 - No need to install this project just Open index.html in your Browser.
 
-
 ### Usage
+
 To run the project, follow these instructions:
 
-  - After Cloning this repo to your local machine.
-  - Open the index.html in your browser.
+- After Cloning this repo to your local machine.
+- Open the index.html in your browser.
 
 ### Run tests
+
 To run tests, run the following command:
+
 - Track HTML linter errors run:
 
 npx hint .
 
 - Track CSS linter errors run:
 
-npx stylelint "**/*.{css,scss}"
+npx stylelint "\*_/_.{css,scss}"
 
 - Track JavaScript linter errors run:
 
 npx eslint .
 
 ### Deployment
- open the index.html on your Browser.
+
+open the index.html on your Browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +106,7 @@ npx eslint .
 - Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
 
-**Author 2** **Vangelis Fotiadis**
+👤 **Vangelis Fotiadis**
 
 - GitHub: [@githubhandle](https://github.com/vangelif)
 - Twitter: [@twitterhandle](https://twitter.com/vangfot)
@@ -116,7 +117,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 **Build a complete website for user to add and remove desired Book**
- 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -129,13 +130,13 @@ Feel free to check the [issues page](https://github.com/binodbhusal/Hello-Microv
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project  please feel free to contact me for any kind of support.
+If you like this project please feel free to contact me for any kind of support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by Cindy Shin in Behance.(https://www.behance.net/adagio07)
+We would like to thank our mentos and Microverse for their support in building the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
