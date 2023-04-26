@@ -11,24 +11,36 @@
     <nav>
       <a class="logo" href="#">Awesome Books</a>
       <ul class="menu">
-        <li><a href="#list">List</a></li>
-        <li><a href="#form">Add Book</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li id="list-link"><a href="#list">List</a></li>
+        <li id="form-link"><a href="#form">Add Book</a></li>
+        <li id="contact-link"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <h1>All Awesome Books</h1>
+    <!-- list of books -->
+    <section id="list">
+      <h1>All Awesome Books</h1>
 
-    <table>
-      <tbody id="table"></tbody>
-    </table>
-
-    <form id="form">
-      <p id="error"></p>
-      <input id="title" type="text" placeholder="Book title..." required />
-      <input id="author" type="text" placeholder="Author's name..." required />
-      <button type="button" id="addBtn">Add this!</button>
-    </form>
-
+      <table>
+        <tbody id="table"></tbody>
+      </table>
+    </section>
+    <!-- add book form -->
+    <section id="form">
+      <form id="form">
+        <p id="error"></p>
+        <input id="title" type="text" placeholder="Book title..." required />
+        <input
+          id="author"
+          type="text"
+          placeholder="Author's name..."
+          required
+        />
+        <button type="button" id="addBtn">Add this!</button>
+      </form>
+    </section>
+    <!-- contact form and footer -->
+    <section id="contact">asdasdasdas</section>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
