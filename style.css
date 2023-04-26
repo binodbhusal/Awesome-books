@@ -5,6 +5,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 55px;
 }
 
 li {
@@ -28,6 +29,10 @@ nav {
 
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 .logo {
@@ -105,26 +110,32 @@ button:hover {
   color: lightcoral;
   cursor: pointer;
 }
-#contact {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
+
+#contact > h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#contact > p {
+  text-align: center;
   font-size: 30px;
 }
 
 #contact > ul {
-  margin-left: 2rem;
+  margin-left: 50rem;
 }
 
 #contact > ul > li {
   list-style: circle;
   padding: 0.4rem 0;
+  font-size: 30px;
 }
 
 footer {
   padding: 0.5rem 5rem;
   margin: 5rem 3rem 0.2rem;
   border: 3px solid lightslategrey;
+  font-size: 20px;
 }
 
 footer a i {
