@@ -105,3 +105,29 @@ button:hover {
   color: lightcoral;
   cursor: pointer;
 }
+#contact {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-size: 30px;
+}
+
+#contact > ul {
+  margin-left: 2rem;
+}
+
+#contact > ul > li {
+  list-style: circle;
+  padding: 0.4rem 0;
+}
+
+footer {
+  padding: 0.5rem 5rem;
+  margin: 5rem 3rem 0.2rem;
+  border: 3px solid lightslategrey;
+}
+
+footer a i {
+  font-size: 1rem;
+  padding: 0 0.2rem;
+}
