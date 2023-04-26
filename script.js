@@ -5,7 +5,14 @@ const addBtn = document.getElementById('addBtn');
 const bookTitle = document.getElementById('title');
 const bookAuthor = document.getElementById('author');
 const error = document.getElementById('error');
-const form = document.getElementById('form');
+
+const listBtn = document.getElementById('list-link');
+const formBtn = document.getElementById('form-link');
+const contactBtn = document.getElementById('contact-link');
+
+const listSection = document.getElementById('list');
+const newBookSection = document.getElementById('form');
+const contactSection = document.getElementById('contact');
 
 class Book {
   constructor() {
@@ -57,7 +64,21 @@ const displayBooks = () => {
   });
 };
 
-const emptyCell = () => {
+const hideSections = () => {
+  listSection.classList.add('hidden');
+  newBookSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+};
+
+const initialize = () => {
+  hideSections();
+  listSection.classList.remove('hidden');
+  displayBooks();
+};
+
+initialize();
+
+const checkEmpty = () => {
   if (bookTitle.value.length === 0 || bookAuthor.value.length === 0) {
     error.innerText = 'The values you provided are empty';
   }
@@ -75,15 +96,16 @@ const checkDoubles = () => {
     error.innerHTML = '';
     books.addNewBook(bookAuthor.value, bookTitle.value);
     bookList = books.getBook();
+    hideSections();
+    listSection.classList.remove('hidden');
     displayBooks();
   }
 };
 
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  emptyCell();
+  checkEmpty();
   checkDoubles();
-  form.reset();
 });
 
 document.addEventListener('click', (e) => {
@@ -93,6 +115,24 @@ document.addEventListener('click', (e) => {
     bookList = books.getBook();
     displayBooks();
   }
+});
+
+listBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  hideSections();
+  listSection.classList.remove('hidden');
+});
+
+formBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  hideSections();
+  newBookSection.classList.remove('hidden');
+});
+
+contactBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  hideSections();
+  contactSection.classList.remove('hidden');
 });
 
 displayBooks();

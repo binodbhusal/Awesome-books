@@ -5,6 +5,43 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 55px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid lightslategray;
+  border-radius: 8px;
+  padding: 0.7rem 9rem;
+  margin: 0.2rem 3rem;
+  font-size: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 7rem;
 }
 
 #error {
@@ -72,4 +109,36 @@ button {
 button:hover {
   color: lightcoral;
   cursor: pointer;
+}
+
+#contact > h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#contact > p {
+  text-align: center;
+  font-size: 30px;
+}
+
+#contact > ul {
+  margin-left: 50rem;
+}
+
+#contact > ul > li {
+  list-style: circle;
+  padding: 0.4rem 0;
+  font-size: 30px;
+}
+
+footer {
+  padding: 0.5rem 5rem;
+  margin: 5rem 3rem 0.2rem;
+  border: 3px solid lightslategrey;
+  font-size: 20px;
+}
+
+footer a i {
+  font-size: 1rem;
+  padding: 0 0.2rem;
 }
