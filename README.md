@@ -119,4 +119,4 @@ We would like to thank our mentos and Microverse for their support in building t
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is <a href="https://github.com/vangelif/Portfolio/blob/popup-window/license.md">MIT licensed</a>.
